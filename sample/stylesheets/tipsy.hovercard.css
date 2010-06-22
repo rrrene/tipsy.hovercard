@@ -1,0 +1,25 @@
+/*
+.tipsy-hovercard .tipsy-inner {
+  border: 3px solid #333;
+  background-color: #fff;
+  color: black;
+}
+*/
+.tipsy-hovercard {
+}
+.tipsy-hovercard .tipsy-inner {
+  padding: 10px;
+}
+.tipsy-hovercard a {
+  color: inherit;
+}
+.tipsy-hovercard .thc-image {
+  float: left;
+  margin-right: 10px;
+}
+.tipsy-hovercard .thc-text {
+  float: left;
+  text-align: left;
+}
+.tipsy-hovercard .thc-options {
+}
