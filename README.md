@@ -25,7 +25,7 @@ USAGE:
 ------
 
 Copy the contents of lib to your javascripts folder and include them in your 
-@&lt;head&gt;@ section. Be sure to provide jQuery >= 1.4 and the tipsy plugin as well.
+`<head>` section. Be sure to provide jQuery >= 1.4 and the tipsy plugin as well.
 
 You can then use it like this:
 
