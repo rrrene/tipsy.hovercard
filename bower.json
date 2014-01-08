@@ -1,0 +1,27 @@
+{
+  "name": "tipsy.hovercard",
+  "version": "0.2",
+  "authors": [
+    "René Föhring"
+  ],
+  "description": "twitter style hovercards for tipsy",
+  "main": "lib/jquery.tipsy.hovercard.js",
+  "keywords": [
+    "tipsy",
+    "hover",
+    "hovercard"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/rrrene/tipsy.hovercard/",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "~2.0.3",
+    "tipsy": "~0.1.7"
+  }
+}
