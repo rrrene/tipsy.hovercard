@@ -7,6 +7,9 @@ DESCRIPTION
 tipsy.hovercard provides twitter-like hovercards for tipsy, the facebook-styled
 tooltip plugin for jQuery.
 
+Examples: http://rrrene.github.io/tipsy.hovercard/
+
+
 SOURCE:
 -------
 
@@ -14,12 +17,14 @@ Hosted at GitHub; browse at:
 
   http://github.com/rrrene/tipsy.hovercard
 
+
 DEPENDENCIES:
 -------------
 
 jQuery: http://jquery.com/
 
 tipsy: http://onehackoranother.com/projects/jquery/tipsy
+
 
 USAGE:
 ------
