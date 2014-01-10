@@ -12,6 +12,11 @@
     <!--[if lt IE 9]>
     <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
+    <link href="stylesheets/tipsy.css" media="screen" rel="stylesheet" type="text/css" />
+    <link href="stylesheets/tipsy.hovercard.css" media="screen" rel="stylesheet" type="text/css" />
+    <script src="javascripts/jquery-2.0.3.min.js" type="text/javascript"></script>
+    <script src="javascripts/jquery.tipsy.js" type="text/javascript"></script>
+    <script src="javascripts/jquery.tipsy.hovercard.js" type="text/javascript"></script>
   </head>
   <body>
     <div class="wrapper">
@@ -39,19 +44,32 @@
 <p>tipsy.hovercard provides twitter-like hovercards for tipsy, the facebook-styled
 tooltip plugin for jQuery.</p>
 
-<h2>
-<a name="source" class="anchor" href="#source"><span class="octicon octicon-link"></span></a>SOURCE:</h2>
 
-<p>Hosted at GitHub; browse at:</p>
 
-<p><a href="http://github.com/rrrene/tipsy.hovercard">http://github.com/rrrene/tipsy.hovercard</a></p>
 
-<h2>
-<a name="dependencies" class="anchor" href="#dependencies"><span class="octicon octicon-link"></span></a>DEPENDENCIES:</h2>
+  <h2>
+  <a name="source" class="anchor" href="#source"><span class="octicon octicon-link"></span></a>EXAMPLES:</h2>
 
-<p>jQuery: <a href="http://jquery.com/">http://jquery.com/</a></p>
+  <input type="button" value="Add new link" onClick="link_counter++;$('#example-links').append('<a href=index.html rel=hovercard title=\'Another tipsyHoverCard<br>(you can hover)\'>Hovercard example '+link_counter+'</a> ');">
+  
+  <a href="index.html" rel="tipsy" title="tipsy tooltip">example link</a> |
+  |
+  <a href="index.html" rel="hovercard" title="A tipsyHoverCard<br>(you can hover)">Hovercard example</a>
+  |
+  <a href="index.html" rel="hovercard" title="loading..." data-url="tip.html">Hovercard w/ AJAX Flavour</a>
+  
+  <p id="example-links">
+  </p>
 
-<p>tipsy: <a href="http://onehackoranother.com/projects/jquery/tipsy">http://onehackoranother.com/projects/jquery/tipsy</a></p>
+  <script>
+    link_counter = 0;
+    jQuery(function ($) {
+      $("*[rel=tipsy]").tipsy();
+      $("*[rel=hovercard]").tipsyHoverCard();
+    });
+  </script>
+
+
 
 <h2>
 <a name="usage" class="anchor" href="#usage"><span class="octicon octicon-link"></span></a>USAGE:</h2>
@@ -72,6 +90,21 @@ tooltip plugin for jQuery.</p>
   });
 &lt;/script&gt;
 </code></pre>
+
+<h2>
+<a name="source" class="anchor" href="#source"><span class="octicon octicon-link"></span></a>SOURCE:</h2>
+
+<p>Hosted at GitHub; browse at:</p>
+
+<p><a href="http://github.com/rrrene/tipsy.hovercard">http://github.com/rrrene/tipsy.hovercard</a></p>
+
+<h2>
+<a name="dependencies" class="anchor" href="#dependencies"><span class="octicon octicon-link"></span></a>DEPENDENCIES:</h2>
+
+<p>jQuery: <a href="http://jquery.com/">http://jquery.com/</a></p>
+
+<p>tipsy: <a href="http://onehackoranother.com/projects/jquery/tipsy">http://onehackoranother.com/projects/jquery/tipsy</a></p>
+
       </section>
       <footer>
         <p><small>Hosted on <a href="http://pages.github.com">GitHub Pages</a> using the Dinky theme</small></p>
